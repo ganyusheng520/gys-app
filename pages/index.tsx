@@ -52,16 +52,14 @@ const Home: NextPage = () => {
       </main>
 
       <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
+        <div className={styles.copyright}>
+          <a className={styles.link}
+           target="_blank"
+           href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33011002016295">
+             <Image src="/copyright.png" alt="" width={20} height={20} />
+             <p>浙公网安备 33011002016295号</p>
+             </a>
+        </div>
       </footer>
     </div>
   )
