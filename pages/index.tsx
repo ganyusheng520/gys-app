@@ -55,7 +55,7 @@ const Home: NextPage = () => {
         <div className={styles.copyright}>
           <a className={styles.link}
            target="_blank"
-           rel="noopener"
+           rel="noreferrer"
            href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33011002016295">
              <Image src="/copyright.png" alt="" width={20} height={20} />
              <p>浙公网安备 33011002016295号</p>
