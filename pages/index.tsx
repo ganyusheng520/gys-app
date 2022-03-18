@@ -14,7 +14,7 @@ const Home: NextPage = () => {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-           欢迎来到甘玉生的个人网站
+           Welcome to my personal blog
         </h1>
 
         <p className={styles.description}>
