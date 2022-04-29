@@ -9,6 +9,9 @@ class MonitorManager {
             throw new Error('Monitor has bean init');
         }
     }
+    public getInstance() {
+        return this;
+    }
 }
 
 const Monitor = new MonitorManager();
