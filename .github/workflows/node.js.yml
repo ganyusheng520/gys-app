@@ -35,5 +35,4 @@ jobs:
         else
         npm i
         fi
-    - run: npm ci
     - run: npm test
