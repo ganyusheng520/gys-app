@@ -3,8 +3,14 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import EmptyPage from './components/404';
+import { useEffect } from 'react';
+import LoggerFactory from '../lib/Log';
+const Logger = LoggerFactory.initNS('HomePage');
 
 const Home: NextPage = () => {
+    useEffect(() => {
+        Logger.info('load HomePage');
+    }, []);
   return (
     <div className={styles.container}>
       <Head>
