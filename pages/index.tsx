@@ -1,3 +1,4 @@
+import React from 'react';
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
@@ -6,9 +7,26 @@ import EmptyPage from './components/404';
 import { useEffect } from 'react';
 import LoggerFactory from '../lib/Log';
 const Logger = LoggerFactory.initNS('HomePage');
+import BrowserLogger from 'alife-logger';
 
 const Home: NextPage = () => {
     useEffect(() => {
+        import('alife-logger').then((res) => {
+            const BrowserLogger = res.default;
+            BrowserLogger.singleton(
+                {
+                    pid: 'dzt5gjlqog@cfd8f431d4ba146',
+                    appType: 'web',
+                    imgUrl: 'https://arms-retcode.aliyuncs.com/r.png?',
+                    sendResource: true,
+                    enableLinkTrace: true,
+                    behavior: true,
+                    enableSPA: true,
+                    useFmp: true,
+                    enableConsole: false
+                }
+            );
+        });
         Logger.info('load HomePage');
     }, []);
   return (
@@ -37,5 +55,6 @@ const Home: NextPage = () => {
     </div>
   )
 }
+
 
 export default Home

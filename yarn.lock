@@ -1019,6 +1019,11 @@
     "json-schema-traverse" "^0.4.1"
     "uri-js" "^4.2.2"
 
+"alife-logger@^1.8.30":
+  "integrity" "sha512-uDJP/D5BMfsBZfV72ZeRZzhLCP267SKoilercjxv34wuXpk65ttOO9STNI49XjOZ5TwZtFm+97r3tE4ONMsI4w=="
+  "resolved" "https://registry.npmjs.org/alife-logger/-/alife-logger-1.8.30.tgz"
+  "version" "1.8.30"
+
 "ansi-escapes@^3.2.0":
   "integrity" "sha512-cBhpre4ma+U0T1oM5fXg7Dy1Jw7zzwv7lt/GoCpr+hDQJoYnKVPLL4dCvSEFMmQurOQvSrwT7SL/DAlhBI97RQ=="
   "resolved" "https://registry.npmjs.org/ansi-escapes/-/ansi-escapes-3.2.0.tgz"
