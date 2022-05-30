@@ -11,6 +11,7 @@ import LoggerFactory from '../lib/Log';
 const Logger = LoggerFactory.initNS('HomePage');
 
 // todo arms通过npm包的方式引入
+// https://github.com/vercel/next.js/issues/36346
 const Home: NextPage = () => {
     useEffect(() => {
         Logger.info('load HomePage');
