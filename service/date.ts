@@ -33,3 +33,5 @@ const getLastDateOfMonth = (currentDate: Date) => {
     const month = currentDate.getMonth();
     return new Date(year, month, 1);
 }
+
+export default {};
